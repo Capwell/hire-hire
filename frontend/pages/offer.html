@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>НаймиНайми</title>
+  <link rel="stylesheet" href="../pages/index.css">
+</head>
+
+<body class="root">
+  <div class="page">
+    <header class="header">
+      <a href="../index.html" class="logo page__link">
+        <img src="../images/logo.png" alt="logo" class="logo__image">
+        <p class="logo__title">НаймиНайми</p>
+      </a>
+      <nav class="header__menu">
+        <ul class="header__items page__list">
+          <li class="header__item">
+            <a href="./interviews.html" class="header__link page__link page__text">
+              Собеседование
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link page__link page__text">
+              Команда
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link header__link_type_blue page__link page__text">
+              Вход
+            </a>
+          </li>
+          <li class="header__item header__item_type_hidden">
+            <a href="./profile.html" class="header__link page__link page__text">
+              Личный кабинет
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="offer">
+        <h1 class="offer__title sections__secondary-title">
+          Предложи свой вопрос
+        </h1>
+        <p class="offer__description sections__description">
+          Здесь у вас есть возможность предложить нам свои варианты вопросов и ответов для наших пользователей. Всего вы
+          можете добавить <strong>до 10 вопросов в день</strong>.
+          <br>
+          В поле «Ваш вопрос» введите вопрос, он должен быть понятным и конкретным, представьте, что такой вопрос задают
+          вам и вы понимаете, что на него можно ответить. В поле «Ваш ответ» введите ответ на тот вопрос, который
+          вы задали ранее. Ответ также должен быть понятным, конкретным и исчерпывающим. Мы тщательно проверяем
+          информацию, которую получаем. После модерации ваши вопросы-ответы попадут в нашу базу данных и помогут
+          пользователям учиться и проверять свои знания.
+        </p>
+        <form class="offer__form sections" name="offer-form">
+          <div class="offer__qa-container">
+            <h2 class="offer__form-title sections__subtitle">
+              Ваш вопрос
+            </h2>
+            <h2 class="offer__form-title sections__subtitle">
+              Ваш ответ
+            </h2>
+            <div class="offer__textarea-container">
+              <textarea id="question" class="offer__textarea page__text" minlength="10" maxlength="500"
+                placeholder="Введите вопрос" required></textarea>
+              <span id="questionError" class="offer__error page__text">Privet</span>
+            </div>
+            <div class="offer__textarea-container">
+              <textarea id="answer" class="offer__textarea page__text" minlength="10" maxlength="500"
+                placeholder="Введите ответ" required></textarea>
+              <span id="answerError" class="offer__error page__text">Privet</span>
+            </div>
+            <p id="questionHint" class="offer__hints page__text">
+              0 / 10-500
+            </p>
+            <p id="answerHint" class="offer__hints page__text">
+              0 / 10-500
+            </p>
+          </div>
+          <div class="offer__button-container">
+            <button class="offer__button offer__button_type_disabled page__text" disabled>
+              Отправить вопрос
+            </button>
+            <p class="offer__button-hint page__text">
+              Вы отправили 0 вопросов из 10 доступных сегодня.
+            </p>
+          </div>
+        </form>
+      </section>
+      <script src="offer.js"></script>
+    </main>
+    <footer class="footer">
+      <div class="footer__contacts">
+        <a href="../index.html" class="logo page__link">
+          <img src="../images/logo-white.png" alt="logo" class="logo__image">
+          <p class="logo__title logo__title_type_white">НаймиНайми</p>
+        </a>
+        <div class="footer__links">
+          <a href="#" class="footer__link page__link footer__link_type_tg"></a>
+          <a href="#" class="footer__link page__link footer__link_type_yt"></a>
+        </div>
+      </div>
+      <p class="footer__copyright page__text">
+        © Копирайт и правила, все права защищены и тд. Текст текст текст
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
